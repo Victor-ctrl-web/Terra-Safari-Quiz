@@ -2,7 +2,7 @@
 
 Esse é o Terra Safari Quiz, um React App desenvolvido durante a imersão React Next.JS da Alura em janeiro de 2021.
 
-![Capa do Projeto](/_docs/aluraquiz-base.png)
+![Capa do Projeto](/public/logo.png)
 
 ## Qual o tema do projeto?
 
