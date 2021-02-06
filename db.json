@@ -1,0 +1,66 @@
+{
+  "bg": "/background.jpg",
+  "title": "Terra Safari Quiz",
+  "description": "Prove que você é digno de viver neste planeta, teste sua probabilidade de sobrevivência através desse quiz sobre as criações da mãe natureza",
+  "questions": [
+    {
+      "image": "/pergunta1.jpg",
+      "title": "Quanto mede a força da mordida de um crocodilo-do-nilo?",
+      "description": "O crocodilo-do-nilo possui a segunda mordida mais forte do reino animal",
+      "answer": 3,
+      "alternatives": [
+		"até 250 quilos",
+		"Até 520 quilos",
+		"Até 780 quilos",
+        "Mais de 1 tonelada"
+      ]
+    },
+    {
+      "image": "/pergunta2.jpg",
+      "title": "Uma palmeira-imperial pode atingir até quantos metros de altura?",
+      "description": "Das espécies de palmeiras de grande porte, a palmeira-imperial é a mais alta",
+      "answer": 2,
+      "alternatives": [
+        "Até 20 metros",
+		"Até 30 metros",
+		"Até 40 metros",
+		"Até 50 metros"
+      ]
+    },
+    {
+      "image": "/pergunta3.jpg",
+      "title": "Qual dos cogumelos abaixo não é venenoso?",
+	  "description": "Todos os cogumelos são comestíveis, alguns apenas uma vez",
+      "answer": 2,
+      "alternatives": [
+		"amanita",
+		"amanita-pantera",
+		"champignon-de-Paris",
+		"cogumelo mágico"
+      ]
+    },
+    {
+      "image": "/pergunta4.jpg",
+      "title": "Qual das bactérias abaixo foi responsável pela peste bubônica?",
+      "description": "A peste dizimou 1/3 da população mundial no século XIV",
+	  "answer": 0,
+      "alternatives": [
+		"Yersinia pestis",
+		"Mycobacterium tuberculosis",
+		"Streptococcus pyogenes",
+		"Clostridium difficile"
+      ]
+    }
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#ebed40",
+      "secondary": "#575454",
+      "mainBg": "#121212",
+      "contrastText": "#FFFFFF",
+      "wrong": "#FF5722",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}

@@ -1,26 +1,48 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
+import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
+  * {
+	font-family: 'Audiowide', cursive;
+    box-sizing: border-box;
+  }
   body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* New styles */
+    display: flex;
+    flex-direction: column;
+    // Deixa branco no começo
+    color: ${({ theme }) => theme.colors.contrastText};
   }
-`
+  html, body {
+    min-height: 100vh;
+  }
+  #__next {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+`;
 
-const theme = {
-  colors: {
-    primary: '#0070f3',
-  },
-}
+const { theme } = db;
 
+// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyle />
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+		<link rel="icon" href="/icone.png" type="image/png" />
+      </Head>
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }

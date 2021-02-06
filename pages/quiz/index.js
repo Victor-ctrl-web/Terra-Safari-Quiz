@@ -1,0 +1,24 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import Head from 'next/head';
+import QuizScreen from '../../src/screens/Quiz';
+import db from '../../db.json';
+
+export default function QuizDaGaleraPage() {
+  return (
+
+    <ThemeProvider theme={db.theme}>
+      <Head>
+        <title>
+          AluraQuiz -
+          {db.title}
+        </title>
+      </Head>
+      <QuizScreen
+        externalQuestions={db.questions}
+        externalBg={db.bg}
+      />
+    </ThemeProvider>
+  );
+}
